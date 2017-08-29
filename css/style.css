@@ -2,7 +2,6 @@
 * {
   margin:0;
   padding:0;
-  overflow: hidden;
   box-sizing: border-box;
 }
 /*Центруємо і ширину даємо , та стилі для тексту*/
@@ -46,7 +45,7 @@ button {
 }
 /*Кінець загальних стилів*/
 
-/*Секція #9*/
+/*-------------------Секція #9---------------------------*/
 .how-to-consume {
     background-color: #777;
 }
@@ -81,7 +80,7 @@ button {
     border-radius: 50%;
 }
 
-/*-------------------Секція #9---------------------------*/
+/*-------------------Секція #10---------------------------*/
 .epilogue-footer {
     background-color: #191919;
 }
@@ -126,4 +125,11 @@ button {
 .epilogue-action button:active {
     color: #00B7E0;
     border-color:#fff;
+}
+/*-------------------Секція #11---------------------------*/
+footer {
+    padding: 15px 0;
+    background-color: #777;
+    color:#fff;
+    text-align: center;
 }
