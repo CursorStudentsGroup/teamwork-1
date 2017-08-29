@@ -1,9 +1,11 @@
+/*Для всіх обнуляємо маргіни і падінги , коли вилазить за ел. щоб приховало*/
 * {
   margin:0;
   padding:0;
   overflow: hidden;
   box-sizing: border-box;
 }
+/*Центруємо і ширину даємо , та стилі для тексту*/
 body {
 	width: 1170px;
 	margin:0 auto;
@@ -11,15 +13,63 @@ body {
     font-size: 16px;
 	font-weight: normal;
 }
+/*В всіх прикладах що в h2 то має 2 кольори та маргін знизу одинаковий для всіх секцій*/
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #191919;
+}
+h2 span {
+    color: #00B7E0;
+}
+/*Для секцій паддінги*/
+section {
+    padding: 30px 0 50px;
+}
 a {
 	text-decoration: none;
 }
 li {
     list-style-type: none;
 }
+/*Робим контейнер щоб центрувати контент в тиж секціях де потрібно*/
 .container {
 	width:992px;
 	height: auto;
 	padding: 0 20px;
     margin: 0 auto;
+}
+/*Кінець загальних стилів*/
+
+/*Секція #9*/
+.how-to-consume {
+    background-color: #777;
+}
+.steps-list {
+    display: flex;
+    justify-content: space-around;
+}
+.steps-list .list-item{
+    width: 150px;
+    height: 150px;
+    background-color: #191919;
+    border-radius: 50%;
+}
+.list-item:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-item:nth-of-type(2) p {
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+}
+.list-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
