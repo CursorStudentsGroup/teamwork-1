@@ -1,0 +1,130 @@
+body{
+	font-family: arial, sans-serif;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+/*----------------------------  Section  1  -----------------------*/
+#mainheader{
+	width: 100%;
+	height: 550px;
+	background: url("../img/look.jpg");
+	background-size: cover;
+	/*background-color: #8FB0BF;*/
+}
+
+#navdiv ul{
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	background: #648DA0;
+	line-height: 80px;
+	color: white;
+	margin-right: 10px;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+#navdiv ul a{
+	text-decoration: none;
+	color: white;
+	padding: 30px;
+}
+#navdiv ul li{
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+	margin-right: 45px;
+}
+#navdiv ul li:hover{
+	background: #8FB0BF;
+	transition: all 0.40s;
+}
+#navdiv h1{
+	width: 300px;
+	float: left;
+	margin-left: 35px;
+	color: white;
+}
+/*----------------------------------  Section  2 -------------------------*/
+#main-content{
+	text-align: right;
+	color: #fff;
+	line-height: 60px;
+	float: right;
+	margin-right: 35px;
+}
+#main-content h1{
+	 font-size: 55px;
+    padding-top: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+#main-content p{
+	font-size: 20px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn{
+	text-transform: uppercase;
+	font-size: 20px;
+	width: 350px;
+	height: 40px;
+	border-radius: 70px;
+	line-height: 30px;
+	text-align: center;
+	border:2px solid #648DA0;
+	display: block;
+	text-decoration: none;
+	margin: 50px auto;
+	color:#fff;
+	position: relative;
+	overflow: hidden;
+	background: #648DA0;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+}
+
+.btn:hover{
+	color:#648DA0;
+	background-color: #fff;
+
+}
+
+/* -----------------------------  Section  3  -----------------------*/
+section {
+	background-color: #fff;
+}
+
+section ul {
+	display: flex;
+	justify-content: center;
+}
+
+section h2{
+   font-size: 1.3em;
+   margin-top:25px;
+   font-weight: bold;
+}
+
+section ul li{
+   list-style-type: none;
+   margin: 20px;
+   padding: 10px;
+}
+
+section li a{
+   padding: 15px 25px;
+   background-color: #648DA0;
+   color: #fff;
+   text-decoration: none;
+}
+
+section li a:hover,
+section li a:active,
+section li a:focus {
+ 	text-decoration: none;
+ 	background-color: #8FB0BF;
+ 	color: #fff;
+}
