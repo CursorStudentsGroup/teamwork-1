@@ -11,6 +11,8 @@ body {
 	font-family: "Roboto", Helvetica, sans-serif;
     font-size: 16px;
 	font-weight: normal;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+
 }
 /*В всіх прикладах що в h2 то має 2 кольори та маргін знизу одинаковий для всіх секцій*/
 h2 {
@@ -84,6 +86,9 @@ button {
 .latest-episodes {
     background: #191919;
 }
+.latest-episodes h2 {
+ color: #fff;
+}
 .eposidests-list {
     display: flex;
     justify-content: space-between;
@@ -119,6 +124,65 @@ button {
     line-height: 1.5;
     margin-bottom: 5px;
 }
+/*-------------------Секція #7,8---------------------------*/
+.together-7-8 {
+ background: #fff;
+}
+.popular-episodes-list {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+.episodes-list-item {
+ /*   flex:50%;*/
+ margin-bottom: 20px;
+ display: flex;
+}
+.episodes-list-item img {
+    width: 120px;
+    height: 112px;
+    background: #B8ABAB;
+}
+.popular-episodes-list:last-child {
+    margin-bottom: 0;
+}
+.popular-item-content h3 {
+    margin-bottom: 10px;
+    color:#00B7E0;
+}
+.popular-item-content p {
+    color: #777;
+}
+.popular-item-content {
+    margin-left: 20px;
+}
+.popular-episodes-list h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.together-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+.media-widgets {
+    height: 625px;
+    /*flex-grow: 100%;*/
+    width: 27%;
+}
+.find-us {
+    width: 100%;
+    height: 100%;
+}
+.find-us img{
+    width: 100%;
+   height: 100%;
+}
+.media-widgets h3{
+    margin-bottom: 15px;
+}
+.media-widgets h3 span {
+    color: #00B7E0;
+} 
 /*-------------------Секція #10---------------------------*/
 .subscribe-buttons {
     background-color: #00B7E0;
