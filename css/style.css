@@ -1,8 +1,9 @@
 /*Для всіх обнуляємо маргіни і падінги , коли вилазить за ел. щоб приховало*/
 * {
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /*Центруємо і ширину даємо , та стилі для тексту*/
 body {
@@ -52,11 +53,15 @@ button {
     padding-right: 20px;
 }
 .subscribe-buttons article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color:#fff;
 }
 .subscribe-buttons section {
     padding:0;
+    -webkit-box-flex:50%;
+    -ms-flex:50%;
     flex:50%;
 }
 .subscribe-action h2 {
@@ -68,6 +73,7 @@ button {
     width: 200px;
     height: 70px;
     display: inline-block;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 .subscribe-action-nav li:nth-child(odd) {
@@ -105,7 +111,10 @@ button {
     background-color: #777;
 }
 .steps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 10px;
 }
@@ -114,11 +123,18 @@ button {
     height: 150px;
     background-color: #191919;
     border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 .list-item:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .list-item:nth-of-type(2) p {
@@ -143,11 +159,15 @@ button {
     color:#fff;
 }
 .epilogue-footer  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .epilogue-footer  section {
     padding-top:0;
     padding-bottom:0;
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
     flex: 50%;
 }
 .epilogue-content h2:not(span) {
@@ -172,6 +192,8 @@ button {
     border-radius:5px;
     font-weight: bold;
     color:#fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
     cursor: pointer;
 }
