@@ -47,7 +47,7 @@ button {
 /*-------------------Секція #5---------------------------*/
 
 .featured-guests {
- background: pink;
+ background: #fff;
 }
 .guests-list {
     display: flex;
@@ -58,8 +58,6 @@ button {
  /*   flex:50%;*/
  width: 48%;
  display: flex;
- border: 1px solid black;
-
 }
 .guests-item:nth-child(-n+2) {
  margin-bottom: 50px;
