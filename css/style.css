@@ -48,16 +48,16 @@ button {
 /*Кінець загальних стилів*/
 
 /*-------------------Секція #4---------------------------*/
-.subscribe-buttons {
+.subscribe-methods {
     background-color: #00B7E0;
     padding-left: 90px;
     padding-right: 20px;
 }
-.subscribe-buttons article {
+.subscribe-methods article {
     display: flex;
     color:#fff;
 }
-.subscribe-buttons section {
+.subscribe-methods section {
     padding:0;
     flex:50%;
 }
