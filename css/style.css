@@ -311,10 +311,10 @@ button {
     margin-bottom: 10px;
     color:#00B7E0;
 }
-h3 a {
+.featured-guests h3 a {
      color:#00B7E0;
 }
-h3 a:hover {
+.featured-guests h3 a:hover {
      color:#3ADBFF;
 }
 .item-content p {
@@ -433,6 +433,19 @@ h3 a:hover {
 }
 .popular-item-content p {
     color: #777;
+}
+
+.popular-episodes-list h3 a {
+     color:#00B7E0;
+}
+.popular-episodes-list h3 a:hover {
+     color:#3ADBFF;
+}
+.media-widgets h3 a {
+     color:#00B7E0;
+}
+.media-widgets h3 a:hover {
+     color:#3ADBFF;
 }
 .popular-item-content {
     margin-left: 20px;
