@@ -2,7 +2,8 @@
 * {
   margin:0;
   padding:0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*Центруємо і ширину даємо , та стилі для тексту*/
 body {
@@ -11,7 +12,8 @@ body {
 	font-family: "Roboto", Helvetica, sans-serif;
     font-size: 16px;
 	font-weight: normal;
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 
 }
 /*В всіх прикладах що в h2 то має 2 кольори та маргін знизу одинаковий для всіх секцій*/
@@ -46,6 +48,8 @@ button {
     outline: none;
     font-size: 16px;
     cursor: pointer;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 /*Робим контейнер щоб центрувати контент в тиж секціях де потрібно*/
@@ -59,6 +63,8 @@ button {
 /*-------------------Секція #1---------------------------*/
     .header {
         padding: 0 90px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .logo {
@@ -70,17 +76,25 @@ button {
         height: 100%;
     }
     .header-navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         height: 50px;
         background: #fff;
         width: 100%;
     }
     .navbar-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .navbar-nav li {
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
         text-align: center;
     }
     .navbar-nav li a {
@@ -89,6 +103,8 @@ button {
         padding: 0 20px;
         line-height: 50px;
         display: inline-block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
         background-color: #fff;
         color:#777;
@@ -101,16 +117,21 @@ button {
         width: 20px;
         height: 20px;
         display: inline-block;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
         margin:-3px 0 0 5px;
         cursor: pointer;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDYxMiA2MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYxMiA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iU2VhcmNoIj4KCQk8Zz4KCQkJPHBhdGggZD0iTTM4Mi41LDBDMjU1Ljc1OSwwLDE1MywxMDIuNzU5LDE1MywyMjkuNWMwLDUzLjAzNCwxOC4xNDksMTAxLjcwNyw0OC4zNjcsMTQwLjU2OEw4LjQxNSw1NjMuMDIxICAgICBDMi44MTIsNTY4LjYyNSwwLDU3NS45NDksMCw1ODMuMzEyYzAsNy4zNDQsMi44MTIsMTQuNjg4LDguNDE1LDIwLjI5MkMxNCw2MDkuMjA4LDIxLjM0Myw2MTIsMjguNjg4LDYxMiAgICAgczE0LjY4OC0yLjc5MiwyMC4yNzItOC4zOTZsMTkyLjk3MS0xOTIuOTcyQzI4MC43OTMsNDQwLjg1MSwzMjkuNDY3LDQ1OSwzODIuNSw0NTlDNTA5LjI0MSw0NTksNjEyLDM1Ni4yNDEsNjEyLDIyOS41ICAgICBTNTA5LjI0MSwwLDM4Mi41LDB6IE0zODIuNSw0MDEuNjI1Yy05NC45MTcsMC0xNzIuMTI1LTc3LjIwOC0xNzIuMTI1LTE3Mi4xMjVjMC05NC45MTcsNzcuMjA4LTE3Mi4xMjUsMTcyLjEyNS0xNzIuMTI1ICAgICBjOTQuOTE3LDAsMTcyLjEyNSw3Ny4yMDgsMTcyLjEyNSwxNzIuMTI1QzU1NC42MjUsMzI0LjQxNyw0NzcuNDE3LDQwMS42MjUsMzgyLjUsNDAxLjYyNXoiIGZpbGw9IiM2ZTZlNmUiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
     }
 .header-search:hover {
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
 }
 /*-------------------Секція #2---------------------------*/
 .banner {
@@ -149,6 +170,8 @@ button {
 .media {
     padding: 10px 20px 10px 90px;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .media h3 {
@@ -161,8 +184,11 @@ button {
     margin-left: 50px;
 }
 .media-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-around;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
 }
 .media-nav li {
     height: 40px;
@@ -186,12 +212,16 @@ button {
     padding-right: 20px;
 }
 .subscribe article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color:#fff;
 }
 .subscribe section {
     padding:0;
-    flex:50%;
+    -webkit-box-flex:50%;
+        -ms-flex:50%;
+            flex:50%;
 }
 .subscribe-action h2 {
     margin-bottom: 15px;
@@ -202,7 +232,8 @@ button {
     width: 200px;
     height: 70px;
     display: inline-block;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 .subscribe-action-nav li:nth-child(odd) {
     margin-right: 15px;
@@ -241,12 +272,19 @@ button {
  background: #fff;
 }
 .guests-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .guests-item {
  width: 48%;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
 }
 .guests-item:nth-child(-n+2) {
@@ -257,11 +295,15 @@ button {
     width: 155px;
     height: 145px;
     background: #B8ABAB;
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.55);
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.55);
 }
 .guests-item img:hover {
-    box-shadow: 0px 0px 14px 0px rgba(179,54,220,0.55);
-    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(179,54,220,0.55);
+            box-shadow: 0px 0px 14px 0px rgba(179,54,220,0.55);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 .item-content h3 {
     margin-bottom: 10px;
@@ -282,9 +324,16 @@ button {
  color: #fff;
 }
 .eposidests-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-bottom: 10px;
 }
 .episodests-item img {
@@ -292,10 +341,13 @@ button {
     height: 180px;
     background: #B8ABAB;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.55);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.55);
+            box-shadow: 0px 0px 14px 0px rgba(255,255,255,0.55);
 }
 .episodests-item img:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 .episodests-item {
     width: 23%;
@@ -324,7 +376,9 @@ button {
 .more-episodes:active {
     color: #8D41D6;
     border-color: #8D41D6;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 .episodests-item-content p{
     color: #fff;
@@ -336,21 +390,29 @@ button {
  background: #fff;
 }
 .popular-episodes-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 70%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
 }
 .episodes-list-item {
  /*   flex:50%;*/
  margin-bottom: 20px;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
 }
 .episodes-list-item img {
     width: 120px;
     height: 112px;
     background: #B8ABAB;
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.55);
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.55);
 }
 .popular-episodes-list:last-child {
     margin-bottom: 0;
@@ -370,8 +432,12 @@ button {
     margin-bottom: 30px;
 }
 .together-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .media-widgets {
     height: 625px;
@@ -384,7 +450,8 @@ button {
 .find-us img{
     width: 100%;
    height: 100%;
-   box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+           box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 .media-widgets h3{
     margin-bottom: 15px;
@@ -397,8 +464,11 @@ button {
     background-color: #777;
 }
 .steps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 10px;
 }
 .steps-list .steps-item{
@@ -406,12 +476,19 @@ button {
     height: 150px;
     background-color: #191919;
     border-radius: 50%;
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 .steps-item:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .steps-item:nth-of-type(2) p {
     padding: 0 15px;
@@ -447,12 +524,16 @@ button {
     background-color: #191919;
 }
 .epilogue-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .epilogue-footer article {
     padding-top:0;
     padding-bottom:0;
-    flex: 50%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
 }
 .epilogue-footer article p {
     color:#fff;
